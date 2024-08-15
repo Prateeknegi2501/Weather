@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body> 
+    <div class="box">  
+        <div class="search_box">
+            <i class='bx bxs-map'></i>  
+            <input type="text" placeholder="Enter Location">
+            <button class='bx bx-search'></button>
+        </div>
+        
+         <div class="weather_box"><!-- for Temperature & Place -->
+            <div class="container">
+                <div class="info">
+                    <div class="weather">
+                        <img src="images/cloud.png" id="image">
+                        <div>
+                            <p class="temp">0˚C</p>
+                        </div>
+                        <p class="des">Place</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="weather_details"><!-- for Humidity and Wind speed -->
+            <div class="humidity">
+                <i class='bx bx-water'></i>
+                <div class="text">
+                    <div class="info_humidity">
+                      <span> 0</span>%    
+                    </div>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class='bx bx-wind'></i>
+                <div class="text">
+                    <div class="info_wind">
+                      <span>0</span>Km/hr  
+                    </div>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+        <div class="not_found"> <!-- Location not found -->
+            <div class="container">
+              <img src="images/404.png">
+            <p>Oops! Location not found</p>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+<script src="weather.js"></script>
+</body>
+</html>
